@@ -1,4 +1,4 @@
-import { Users } from "../muserModel.js";
+import { Users } from "../models/userModel.js";
 import jwt from "jsonwebtoken";
 import { promisify } from "util";
 const signToken = (id) => {

@@ -2,6 +2,8 @@ import { Categories } from "../models/categoriesModel.js";
 import { APIFeatures } from "../utils/apiFeatures.js";
 
 export const getAllCategories = async (req, res, next) => {
+  console.log(req.query);
+  
   try {
     const features = new APIFeatures(Categories.find(), req.query)
       .filter()
